@@ -1,0 +1,18 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="340" viewBox="0 0 1200 340">
+<rect width="1200" height="340" rx="18" fill="#0f172a"/>
+<text x="40" y="45" font-family="Inter,Arial" font-size="20" font-weight="800" fill="#fff">Nyquist — one semicircle + Warburg tail (Rs → Rct → W)</text>
+<g font-family="Inter,Arial" font-size="13" fill="#64748b">
+<line x1="80" y1="290" x2="1120" y2="290" stroke="#334155"/><line x1="80" y1="290" x2="80" y2="60" stroke="#334155"/>
+<text x="100" y="312">Rs 2.1Ω</text><text x="500" y="312">Rct ~7Ω</text><text x="900" y="312">Warburg tail →</text>
+<text x="20" y="100">-Z''</text><text x="20" y="290">Z' →</text>
+</g>
+<path d="M110,285 C140,180 220,90 340,95 C460,100 520,180 560,240 L900,285" fill="none" stroke="#22d3ee" stroke-width="4"/>
+<circle cx="110" cy="285" r="7" fill="#22d3ee"/><circle cx="340" cy="95" r="6" fill="#a78bfa"/><circle cx="560" cy="240" r="6" fill="#5eead4"/>
+<g font-family="Inter,Arial" font-size="14" fill="#e2e8f0">
+<text x="820" y="90">● high-freq intercept = Rs</text>
+<text x="820" y="115">● diameter = Rct</text>
+<text x="820" y="140">● 45° tail = Warburg</text>
+<text x="820" y="175" fill="#facc15">Don't force 2nd arc. Fit raw.</text>
+</g>
+<text x="80" y="330" font-family="Inter,Arial" font-size="13" fill="#5eead4">sample: templates/eis_sample.csv · full guide: cheatsheets/eis-fitting-guide.md</text>
+</svg>

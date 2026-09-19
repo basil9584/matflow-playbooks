@@ -1,0 +1,19 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="380" viewBox="0 0 1200 380">
+<rect width="1200" height="380" rx="18" fill="#0f172a"/>
+<text x="40" y="45" font-family="Inter,Arial" font-size="20" font-weight="800" fill="#fff">Capacity retention — SEI √n vs cycling n^β vs Li-loss (held-out pick)</text>
+<g font-family="Inter,Arial" font-size="13" fill="#64748b">
+<line x1="80" y1="320" x2="1120" y2="320" stroke="#334155"/><line x1="80" y1="320" x2="80" y2="70" stroke="#334155"/>
+<text x="80" y="345">0</text><text x="350" y="345">50</text><text x="620" y="345">100</text><text x="890" y="345">150 cycles</text>
+<text x="30" y="120">175</text><text x="30" y="220">150</text><text x="30" y="300">120 mAh/g</text>
+</g>
+<path d="M80,110 L200,130 L350,160 L500,190 L650,220 L800,250 L950,275 L1100,295" fill="none" stroke="#22d3ee" stroke-width="4"/>
+<path d="M80,125 L200,145 L350,175 L500,205 L650,235 L800,260 L950,280 L1100,295" fill="none" stroke="#334155" stroke-dasharray="8 6" stroke-width="3"/>
+<path d="M80,110 L200,128 L350,158 L500,200 L650,245 L800,285 L950,310 L1100,325" fill="none" stroke="#a78bfa" stroke-width="3" opacity=".8"/>
+<path d="M80,95 L1100,280 L1100,310 L80,125 Z" fill="#22d3ee" opacity=".12"/>
+<g font-family="Inter,Arial" font-size="14">
+<circle cx="1050" cy="90" r="6" fill="#22d3ee"/><text x="1062" y="95" fill="#e2e8f0">measured</text>
+<line x1="1040" y1="115" x2="1060" y2="115" stroke="#22d3ee" stroke-width="4"/><text x="1062" y="120" fill="#e2e8f0">SEI √n winner</text>
+<line x1="1040" y1="140" x2="1060" y2="140" stroke="#a78bfa" stroke-width="3"/><text x="1062" y="145" fill="#e2e8f0">cycling n^β</text>
+</g>
+<text x="80" y="365" font-family="Inter,Arial" font-size="13" fill="#5eead4">✓ split-conformal intervals · mechanism picked by held-out RMSE, not vibes · templates/battery_cycles_template.csv</text>
+</svg>

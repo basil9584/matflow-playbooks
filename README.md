@@ -1,128 +1,198 @@
-# I built a 500k-line chemistry platform and I don't even like chemistry.
+<div align="center">
+
+![Matflow hero](assets/hero-banner.svg)
+
+[![Live Demo](https://img.shields.io/badge/LIVE-matflow.celaron.com-22d3ee?style=for-the-badge&logo=google-chrome&logoColor=white)](https://matflow.celaron.com)
+[![Free Templates](https://img.shields.io/badge/FREE-13_files_no_signup-a78bfa?style=for-the-badge)](./templates)
+[![Self-Hostable](https://img.shields.io/badge/self_hostable-Docker_+_Caddy-5eead4?style=for-the-badge)](https://matflow.celaron.com)
+[![Evidence Labelled](https://img.shields.io/badge/every_number-MEASURED_or_DEMO-facc15?style=for-the-badge)](#-evidence-first-no-fake-science)
 
 **This repo has almost no code. That's the point.**
 
-It's a free survival kit for people drowning in battery Excel files, EIS spectra, and formulation spreadsheets — plus a live demo of the monster I built to escape that hell.
+Free survival kit for battery Excel hell, EIS spectra, and formulation spreadsheets — plus the live monster I built to escape it.
 
-👉 **Try Matflow live here: https://matflow.celaron.com**
+👉 **Try Matflow live: https://matflow.celaron.com** — Data workspace → “use demo dataset”
 
-Matflow is a self-hostable R&D platform: drop in any messy lab file, get a governed dataset in minutes, run physics-validated predictions with uncertainty bars, export everything you own. Every number is labelled `MEASURED / COMPUTED / PREDICTED / EXTRACTED / HYPOTHESIS / DEMO` — no fake data presented as real.
-
-Built by a GenAI guy, not a materials guy. 500k lines, ~3,195 backend tests, 5 verticals. I'm freezing the science and keeping the useful parts alive.
+</div>
 
 ---
 
-## Why this repo exists (and why it will rank)
+<div align="center">
 
-Google "convert BioLogic mpt to capacity csv" or "fit EIS Nyquist to Randles circuit free" — you get papers, dead tools, or $2k software.
+![The loop](assets/loop.svg)
 
-This repo gives you the actual templates + checklists + copy-paste LLM prompts I used, for free, no signup. If you want the 1-click version, that's Matflow 👆.
+| 📥 Drop | 🧹 Clean | 📈 Predict | ⚖️ Optimize | 📄 Own |
+|---|---|---|---|---|
+| Neware, BioLogic, Arbin, Excel, PDF | units, mass, cycles, 11 QA checks | RUL, EIS, Hansen ± intervals | Pareto + $/kg + VOC | CSV, RO-Crate, dossier |
 
-## Who this is for
+</div>
 
-- Battery test engineers with Neware / BioLogic / Arbin / Maccor exports that don't match
-- Formulation nerds doing Hansen + mixture DOE in Excel hell
-- Students / indie labs who can't afford Citrine, Schrödinger, or JMP
-- Anyone who got burned by "AI chemistry" that hallucinates numbers
+## 😩 The pain (pick your poison)
 
-If that's not you, star and leave. No hard feelings.
+<table>
+<tr>
+<td width="33%" valign="top">
 
-## The 3 free playbooks (start here)
+### 🔋 Battery Friday panic
+3 cyclers, 3 formats, missing mass, PI wants a plot.
+Your two curves are off by 22% because mass was electrode-total in one, active in the other.
 
-### 1. Battery cycle-life from a dirty cycler Excel
-**Pain:** 3 cyclers, 3 formats, missing mass, no RUL, PI wants a plot Friday.
-**Free stuff in this repo:**
-- `templates/battery_cycles_template.csv` — clean 20-row example that actually imports
-- `cheatsheets/battery-excel-cleaning-guide.md` — the 11-point QA checklist (units, mass normalization, cycle reconstruction)
-- `prompts/llm-prompts-for-battery-reports.md` — prompt to turn your cleaned CSV into a weekly report draft
-**1-click version in Matflow:** upload cycler file → auto-normalize → RUL with conformal intervals → degradation-mechanism analyzer (SEI √n vs cycling n^β vs lithium-inventory loss, picked by held-out RMSE) → reproducible export.
-Try it: https://matflow.celaron.com → Data workspace → "use demo dataset"
+**Free fix ↓**
+`templates/battery_cycles_template.csv`
 
-Keywords for searchers: `battery cycle life prediction excel, neware btsda capacity csv, biologics mpt to csv, battery RUL python, cellpy alternative hosted`
+</td>
+<td width="33%" valign="top">
 
-### 2. EIS Nyquist → equivalent-circuit fit without $2k software
-**Pain:** You have a Nyquist semicircle and need Rs, Rct, Warburg — now.
-**Free stuff:**
-- `templates/eis_sample.csv` — Z' / -Z'' sample that won't crash fitters
-- `cheatsheets/eis-fitting-guide.md` — Randles vs SEI vs Warburg, when each lies to you
-**1-click version:** Matflow extracts Randles/SEI/Warburg params from measured spectrum with plots you can defend.
-Try it: https://matflow.celaron.com
+### 〰️ EIS semicircle of doom
+You have a Nyquist plot and need Rs, Rct, Warburg — now.
+Fit 7 elements and it's overfit. Fit 2 and your reviewer laughs.
 
-Keywords: `fit EIS nyquist online free, randles circuit fitting python, EIS equivalent circuit Rs Rct`
+**Free fix ↓**
+`templates/eis_sample.csv`
 
-### 3. Formulations: Hansen + D-optimal mixture that fits on one page
-**Pain:** 120 solvents, 5 ingredients, constraints, PI says "just DOE it".
-**Free stuff:**
-- `templates/formulation_runs_template.csv` — ingredient fractions + response template with constraint check
-- `cheatsheets/hansen-solubility-guide.md` — fitted Hansen model explained like you're 5 (RidgeCV on RDKit fragments, LOO-CV MAE, applicability flag)
-- `prompts/llm-prompts-for-formulations.md`
-**1-click version:** fitted Hansen predictor with intervals + D-optimal mixture design (coordinate exchange, Scheffé linear/quadratic, D-efficiency report).
-Try it: https://matflow.celaron.com
+</td>
+<td width="33%" valign="top">
 
-Keywords: `hansen solubility parameters from smiles, D-optimal mixture design excel, formulation DOE free tool`
+### 🧪 Formulation DOE hell
+120 solvents, 5 ingredients, sum must = 1.0.
+Random points waste runs. PI says “just DOE it”.
+
+**Free fix ↓**
+`templates/formulation_runs_template.csv`
+
+</td>
+</tr>
+</table>
+
+![Evidence first](assets/evidence-strip.svg)
+
+### 🧬 Evidence first — no fake science
+Every number in Matflow carries one. Synthetic is always `DEMO`, charges $0, never presented as real. Audit log is hash-chained. Export via RO-Crate + OPTIMADE so you can leave anytime.
 
 ---
 
-## Templates in this repo (all free, MIT)
+## 🔋 1. Battery cycle-life that survives review
 
-| File | What it is | Use it for |
+![Degradation demo](assets/degradation-demo.svg)
+
+**Messy in → clean out:**
+- `Neware_45C_cell3.xlsx`: `Cap(mAh)`, merged headers, rest steps counted as cycles 12, 13, 14
+- `Biologic_VMP3.mpt`: 40k rows, `I/mA` vs `Ewe/V`, no mass column
+- **Out:** one table — cycle, Q_charge, Q_discharge, CE, V_mean, T, mass_active_g, source_file, excluded_reason + retention plot with mechanism + interval
+
+**Free in this repo:**
+- 📄 `templates/battery_cycles_template.csv` — 20-row clean example that actually imports
+- ✅ `templates/cycler_qa_checklist.md` — 11-point QA (mass, units, cycle reconstruction)
+- 📖 `cheatsheets/battery-excel-cleaning-guide.md` — Neware/BioLogic/Arbin fix order
+- 🤖 `prompts/llm-prompts-for-battery-reports.md` — weekly report prompts
+
+**1-click in Matflow:** upload → auto-normalize → RUL with split-conformal intervals → mechanism analyzer (SEI √n vs cycling n^β vs Li-loss, picked by held-out RMSE) → reproducible export.
+👉 https://matflow.celaron.com
+
+<details>
+<summary>🔍 Search bait: click to expand keywords</summary>
+
+`battery cycle life prediction excel, neware btsda capacity csv, biologics mpt to csv, battery RUL python, cellpy alternative hosted`
+</details>
+
+---
+
+## 〰️ 2. EIS Nyquist → Rs / Rct / Warburg without $2k software
+
+![EIS demo](assets/eis-demo.svg)
+
+**Fit order that works:**
+1. High-freq intercept → **Rs** (1–5 Ω for liquid cells)
+2. Main semicircle diameter → **Rct**
+3. 45° tail → **Warburg**. Vertical tail → capacitive, drop W.
+4. >4 elements to look pretty = overfit.
+
+**Free in this repo:**
+- 📄 `templates/eis_sample.csv` — clean Z' / -Z'' that won't crash fitters
+- 📖 `cheatsheets/eis-fitting-guide.md` — Randles vs SEI vs Warburg picker + red flags
+
+**1-click in Matflow:** measured spectrum → Randles/SEI/Warburg params + defendable plots.
+👉 https://matflow.celaron.com
+
+---
+
+## 🧪 3. Formulations: Hansen + D-optimal on one page
+
+![Pareto demo](assets/pareto-demo.svg)
+
+**Hansen in one line:** Ra² = 4(dD₁-dD₂)² + (dP₁-dP₂)² + (dH₁-dH₂)². RED = Ra/R₀. RED < 1 = good.
+
+**D-optimal in one paragraph:** constraints A 0.5–0.7, B 0.2–0.4, C 0.1–0.2. Random wastes runs. Coordinate-exchange picks 8 + 2 center repeats for Scheffé quadratic, reports D-efficiency.
+
+**Free in this repo:**
+- 📄 `templates/formulation_runs_template.csv` — fractions sum to 1.00 check included
+- 📖 `cheatsheets/hansen-solubility-guide.md` — RidgeCV/RDKit/LOO-MAE explained like you're 5
+- 🤖 `prompts/llm-prompts-for-formulations.md` — run-sheet + next-batch picker
+
+**1-click in Matflow:** fitted Hansen with intervals + applicability flag + D-optimal design.
+👉 https://matflow.celaron.com
+
+---
+
+## 📦 All free loot (MIT — steal it)
+
+| File | What | Open in |
 |---|---|---|
-| `templates/battery_cycles_template.csv` | 20-row clean cycle example | Test any importer before your real file |
-| `templates/eis_sample.csv` | Clean Z'/Z'' spectrum | Test any EIS fitter |
-| `templates/formulation_runs_template.csv` | Mixture runs + constraints | Test any DOE tool |
-| `templates/cycler_qa_checklist.md` | 11-point import QA | Stop silent unit errors |
-| `cheatsheets/battery-excel-cleaning-guide.md` | Step-by-step cleaning | Neware/BioLogic/Arbin mess |
-| `cheatsheets/eis-fitting-guide.md` | Circuit picker + pitfalls | Defendable fits |
-| `cheatsheets/hansen-solubility-guide.md` | Hansen in plain English | Solvent screening |
-| `prompts/llm-prompts-for-battery-reports.md` | Copy-paste prompts | Weekly report drafts |
-| `prompts/llm-prompts-for-formulations.md` | Copy-paste prompts | Run-sheet + next batch |
-| `examples/before-after.md` | Messy in → clean out | See what "governed" means |
+| `templates/battery_cycles_template.csv` | 20-row clean cycles | Excel / Sheets / Python |
+| `templates/eis_sample.csv` | Clean Nyquist spectrum | Any fitter |
+| `templates/formulation_runs_template.csv` | Mixture + constraints | Any DOE tool |
+| `templates/cycler_qa_checklist.md` | 11-point import QA | 2 min read |
+| `cheatsheets/battery-excel-cleaning-guide.md` | Cross-vendor cleaning | 5 min |
+| `cheatsheets/eis-fitting-guide.md` | Circuit picker | 5 min |
+| `cheatsheets/hansen-solubility-guide.md` | Hansen plain-English | 5 min |
+| `prompts/llm-prompts-for-battery-reports.md` | Report prompts | Copy-paste |
+| `prompts/llm-prompts-for-formulations.md` | DOE prompts | Copy-paste |
+| `examples/before-after.md` | Messy → governed | See the bar |
 
-No pip install. No Docker. Just download and open in Excel/Sheets/Python.
+No `pip install`. No Docker. Just download.
 
-## Matflow vs the usual suspects (honest version)
+---
+
+## ⚔️ Honest comparison
 
 | Tool | Good at | Pain |
 |---|---|---|
-| cellpy (free, MIT) | Reads many cycler formats, great lib | You code everything, no hosted review/export |
-| BioLogic EC-Lab / Neware BTSDA | Native analysis for their box | Single-vendor, cross-brand batch = pain |
-| JMP / Citrine / MaterialsZone | Real stats, real platform | Price, procurement, overkill for 1 lab |
-| **Matflow (this → https://matflow.celaron.com)** | Cross-vendor ingest + review + uncertainty + export you own, self-hostable | Beta. Student-built. No enterprise support. DEMO data always labelled DEMO. |
+| **cellpy** (free, MIT) | Reads many cycler formats, great lib | You code everything, no hosted review/export |
+| **BioLogic EC-Lab / Neware BTSDA** | Native for their box | Single-vendor, cross-brand batch = pain |
+| **JMP / Citrine / MaterialsZone** | Real stats, real platform | Price, procurement, overkill for 1 lab |
+| **Matflow → https://matflow.celaron.com** | Cross-vendor ingest + review + uncertainty + export you own, self-hostable | Beta. Student-built. No enterprise support. DEMO always labelled. |
 
-If native software already does your job well, stay there. If you're stitching 3 exports in Excel every Friday, try the demo dataset.
-
-## Evidence classes (why I won't hallucinate your thesis)
-
-Every number in Matflow carries one:
-`MEASURED` = from your instrument file, `COMPUTED` = deterministic calc, `PREDICTED` = model + interval, `EXTRACTED` = LLM/doc parse needing review, `HYPOTHESIS` = guess, `DEMO` = synthetic sample.
-
-Synthetic is always labelled DEMO. Audit log is hash-chained. RO-Crate + OPTIMADE export so you can leave anytime.
-
-## Pricing (to pay the server, not to yacht)
-
-Matflow live pricing: Starter $99 / Pro $349 / Enterprise from $999/mo, credit packs $8–$110 for real compute. Free tier: 5 datasets, 2 campaigns, 10 copilot msgs/mo, watermarked dossiers. Academic `.edu/.ac` auto-approved for free taste.
-
-This GitHub repo stays free forever. Templates are MIT. Take them even if you never click Matflow.
-
-## FAQ (from real DMs)
-
-**Is this another AI wrapper that fakes science?** No. If the engine isn't installed it says DEMO and charges $0. Real QM/MD/docking/FEP runs are metered and debited from credits. No fake as real.
-**Do I need to install anything?** For templates: no. For Matflow: browser only, or self-host with Docker.
-**Can I self-host?** Yes. Docker Compose + Caddy + Postgres. Your files, your box.
-**I have a weird file. Will it work?** Maybe not. Upload the sample first, check `templates/cycler_qa_checklist.md`. Unsupported = rejected before charge, with reason.
-**Are you really not a materials guy?** Correct. I'm GenAI/LLMs. That's why I built boring ingest + review + export instead of pretending to be a professor.
-
-## Get 3 months free Pro (labs only)
-
-I'm giving 5 indie/academic labs free Pro for 3 months if you:
-1. Try the demo dataset at https://matflow.celaron.com
-2. Run 1 real file (your own, you own rights)
-3. Post your before/after + what broke (issue in this repo or email)
-
-No sales call. Async only. During exams I reply slow — jobs queue, data stays.
-
-Open an issue titled `LAB-TRY: <your lab>` with: instrument/file type, rows, what you want out. I'll enable you.
+If native software does your job, stay there. If you stitch 3 exports every Friday, try the demo dataset.
 
 ---
 
-Built for fun with free LLM credits and a Contabo box. Star ⭐ if a template saved you 30 minutes — that's the whole GTM budget.
+## 💰 Pricing (pays the server, not a yacht)
+
+Starter **$99** / Pro **$349** / Enterprise from **$999**/mo. Credit packs **$8–$110** for real compute. Free tier: 5 datasets, 2 campaigns, 10 copilot msgs/mo, watermarked dossiers. Academic `.edu/.ac` free.
+
+This repo stays free forever. Take the templates even if you never click Matflow.
+
+---
+
+## 🎓 Get 3 months Pro free (5 labs)
+
+1. Try demo at https://matflow.celaron.com
+2. Run 1 real file (you own rights)
+3. Post before/after + what broke
+
+Open an issue: `LAB-TRY: <your instrument, rows, desired output>`. No sales call. Async only — during exams I reply slow, jobs queue, data stays.
+
+---
+
+<div align="center">
+
+### Built for fun with free LLM credits + a Contabo box.
+### I'm GenAI/LLMs, not materials — that's why ingest → review → export is boring and works.
+
+⭐ Star if a template saved you 30 min — that's the entire marketing budget.
+
+[![Open Matflow](https://img.shields.io/badge/Open_Matflow-matflow.celaron.com-22d3ee?style=for-the-badge&logo=rocket)](https://matflow.celaron.com)
+
+`battery · EIS · Hansen · DOE · Pareto · RO-Crate · OPTIMADE · PyBaMM · self-hosted`
+
+</div>

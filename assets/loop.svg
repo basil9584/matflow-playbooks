@@ -1,0 +1,14 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="220" viewBox="0 0 1200 220">
+<rect width="1200" height="220" rx="18" fill="#0f172a"/>
+<g font-family="Inter,Segoe UI,Arial" text-anchor="middle">
+<g><rect x="20" y="40" width="200" height="140" rx="16" fill="#13233f" stroke="#22d3ee" stroke-width="2"/><text x="120" y="85" font-size="34">📥</text><text x="120" y="115" font-size="16" font-weight="800" fill="#fff">1. DROP FILE</text><text x="120" y="138" font-size="13" fill="#94a3b8">Neware · BioLogic</text><text x="120" y="156" font-size="13" fill="#94a3b8">Arbin · Excel · PDF</text></g>
+<text x="238" y="120" font-size="28" fill="#334155">→</text>
+<g><rect x="256" y="40" width="200" height="140" rx="16" fill="#13233f" stroke="#a78bfa" stroke-width="2"/><text x="356" y="85" font-size="34">🧹</text><text x="356" y="115" font-size="16" font-weight="800" fill="#fff">2. AUTO-CLEAN</text><text x="356" y="138" font-size="13" fill="#94a3b8">units · mass · cycles</text><text x="356" y="156" font-size="13" fill="#94a3b8">11 QA checks</text></g>
+<text x="474" y="120" font-size="28" fill="#334155">→</text>
+<g><rect x="492" y="40" width="200" height="140" rx="16" fill="#13233f" stroke="#5eead4" stroke-width="2"/><text x="592" y="85" font-size="34">📈</text><text x="592" y="115" font-size="16" font-weight="800" fill="#fff">3. PREDICT</text><text x="592" y="138" font-size="13" fill="#94a3b8">RUL · EIS · Hansen</text><text x="592" y="156" font-size="13" fill="#94a3b8">± intervals, not hype</text></g>
+<text x="710" y="120" font-size="28" fill="#334155">→</text>
+<g><rect x="728" y="40" width="200" height="140" rx="16" fill="#13233f" stroke="#facc15" stroke-width="2"/><text x="828" y="85" font-size="34">⚖️</text><text x="828" y="115" font-size="16" font-weight="800" fill="#fff">4. OPTIMIZE</text><text x="828" y="138" font-size="13" fill="#94a3b8">Pareto + $/kg + VOC</text><text x="828" y="156" font-size="13" fill="#94a3b8">TOPSIS ranked</text></g>
+<text x="946" y="120" font-size="28" fill="#334155">→</text>
+<g><rect x="964" y="40" width="200" height="140" rx="16" fill="#22d3ee"/><text x="1064" y="85" font-size="34">📄</text><text x="1064" y="115" font-size="16" font-weight="800" fill="#0b1026">5. EXPORT</text><text x="1064" y="138" font-size="13" fill="#0b1026">CSV · RO-Crate</text><text x="1064" y="156" font-size="13" fill="#0b1026">dossier you own</text></g>
+</g>
+</svg>
