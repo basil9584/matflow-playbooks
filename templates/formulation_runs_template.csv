@@ -1,0 +1,9 @@
+run,fraction_A,fraction_B,fraction_C,temperature_C,mixing_min,response_viscosity_cP,response_pass,notes
+1,0.60,0.30,0.10,25,10,420,yes,center
+2,0.70,0.20,0.10,25,10,510,yes,
+3,0.50,0.40,0.10,25,10,380,yes,
+4,0.60,0.20,0.20,25,10,560,yes,
+5,0.55,0.30,0.15,40,15,390,yes,heated
+6,0.65,0.25,0.10,40,15,470,yes,
+7,0.60,0.30,0.10,25,10,425,yes,repeat-center
+8,0.50,0.30,0.20,25,10,610,no,too-thick
