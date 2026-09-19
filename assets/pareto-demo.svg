@@ -1,18 +1,61 @@
-<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="360" viewBox="0 0 1200 360">
-<rect width="1200" height="360" rx="18" fill="#0f172a"/>
-<text x="40" y="45" font-family="Inter,Arial" font-size="20" font-weight="800" fill="#fff">Pareto frontier — performance vs $/kg (TOPSIS ranked)</text>
-<g font-family="Inter,Arial" font-size="13" fill="#64748b">
-<line x1="80" y1="310" x2="1120" y2="310" stroke="#334155"/><line x1="80" y1="310" x2="80" y2="70" stroke="#334155"/>
-<text x="100" y="332">$0/kg</text><text x="550" y="332">$6/kg</text><text x="980" y="332">$12/kg</text>
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="400" viewBox="0 0 1200 400">
+<rect width="1200" height="400" rx="14" fill="#FFFFFF" stroke="#E7E7E2"/>
+
+<g font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Helvetica, Arial, sans-serif">
+<text x="40" y="42" font-size="18" font-weight="700" fill="#111827" letter-spacing="-0.2">Candidate ranking — cost sits on the frontier, not in a footnote</text>
+<text x="40" y="66" font-size="12" fill="#6B7280" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, monospace">demo run · TOPSIS weights 0.6 performance / 0.4 cost</text>
 </g>
-<g font-family="Inter,Arial" font-size="13">
-<circle cx="200" cy="250" r="9" fill="#334155"/><text x="185" y="278" fill="#64748b">baseline</text>
-<circle cx="350" cy="220" r="9" fill="#334155"/><circle cx="450" cy="235" r="9" fill="#334155"/>
-<circle cx="580" cy="190" r="11" fill="none" stroke="#22d3ee" stroke-width="3"/><text x="560" y="170" fill="#22d3ee" font-weight="800">Ti-6Al-4V</text>
-<circle cx="720" cy="160" r="11" fill="none" stroke="#22d3ee" stroke-width="3"/><text x="700" y="140" fill="#22d3ee" font-weight="800">NMC-532</text>
-<circle cx="860" cy="130" r="11" fill="none" stroke="#22d3ee" stroke-width="3"/><text x="845" y="110" fill="#22d3ee" font-weight="800">SiC</text>
-<circle cx="990" cy="100" r="13" fill="#22d3ee"/><text x="955" y="80" fill="#fff" font-weight="800">★ CF-849 #1</text>
-<path d="M580,190 L720,160 L860,130 L990,100" stroke="#22d3ee" stroke-width="2" stroke-dasharray="6 5" fill="none"/>
+
+<g stroke="#F1F5F9" stroke-width="1">
+<line x1="90" y1="100" x2="1140" y2="100"/><line x1="90" y1="180" x2="1140" y2="180"/>
+<line x1="90" y1="260" x2="1140" y2="260"/><line x1="90" y1="340" x2="1140" y2="340"/>
+<line x1="90" y1="100" x2="90" y2="340"/><line x1="440" y1="100" x2="440" y2="340"/>
+<line x1="790" y1="100" x2="790" y2="340"/><line x1="1140" y1="100" x2="1140" y2="340"/>
 </g>
-<text x="80" y="350" font-family="Inter,Arial" font-size="13" fill="#5eead4">Gray = dominated · Cyan = Pareto-optimal · Cost on the frontier, not in a footnote</text>
+<line x1="90" y1="340" x2="1140" y2="340" stroke="#CBD5E1"/>
+<line x1="90" y1="100" x2="90" y2="340" stroke="#CBD5E1"/>
+
+<g fill="#D1D5DB">
+<circle cx="195" cy="320" r="6"/><circle cx="248" cy="288" r="6"/><circle cx="318" cy="308" r="6"/>
+<circle cx="361" cy="268" r="6"/><circle cx="423" cy="280" r="6"/><circle cx="475" cy="252" r="6"/>
+<circle cx="571" cy="260" r="6"/><circle cx="633" cy="228" r="6"/><circle cx="720" cy="216" r="6"/>
+<circle cx="834" cy="200" r="6"/><circle cx="1009" cy="180" r="6"/><circle cx="1088" cy="204" r="6"/>
+</g>
+
+<path d="M536,192 L685,168 L781,144 L913,126" fill="none" stroke="#0F766E" stroke-width="2" stroke-dasharray="7 5"/>
+
+<g fill="none" stroke="#0F766E" stroke-width="2.5">
+<circle cx="536" cy="192" r="8"/><circle cx="685" cy="168" r="8"/><circle cx="781" cy="144" r="8"/>
+</g>
+<circle cx="913" cy="126" r="9" fill="#0F766E"/>
+<circle cx="913" cy="126" r="4" fill="#FFFFFF"/>
+
+<g font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, monospace" font-size="11" fill="#0F766E">
+<text x="548" y="188">Ti-6Al-4V</text>
+<text x="697" y="164">NMC-532</text>
+<text x="793" y="140">SiC</text>
+</g>
+<text x="926" y="121" font-size="12" font-weight="700" fill="#134E4A" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, monospace">CF-849 ★ rank 1</text>
+
+<g stroke="#94A3B8" stroke-width="1" stroke-dasharray="3 4" fill="none">
+<line x1="913" y1="135" x2="913" y2="340"/>
+<line x1="90" y1="126" x2="904" y2="126"/>
+</g>
+<text x="913" y="360" font-size="11" fill="#6B7280" text-anchor="middle" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, monospace">$4.82/kg</text>
+<text x="84" y="122" font-size="11" fill="#134E4A" text-anchor="end" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, monospace">88.4</text>
+
+<g font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, monospace" font-size="11" fill="#94A3B8">
+<text x="74" y="344" text-anchor="end">40</text>
+<text x="74" y="264" text-anchor="end">60</text>
+<text x="74" y="184" text-anchor="end">80</text>
+<text x="74" y="104" text-anchor="end">100</text>
+<text x="90" y="362" text-anchor="middle">0</text>
+<text x="440" y="362" text-anchor="middle">4</text>
+<text x="790" y="362" text-anchor="middle">8</text>
+<text x="1140" y="362" text-anchor="middle">12</text>
+</g>
+<text x="90" y="386" font-size="12" fill="#6B7280" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Helvetica, Arial, sans-serif">cost (USD/kg)</text>
+<text x="30" y="220" font-size="12" fill="#6B7280" text-anchor="middle" transform="rotate(-90 30 220)" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Helvetica, Arial, sans-serif">performance score</text>
+
+<text x="1140" y="386" font-size="10.5" fill="#B0B7C3" text-anchor="end" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, monospace">gray = dominated · teal = Pareto-optimal · demo data</text>
 </svg>

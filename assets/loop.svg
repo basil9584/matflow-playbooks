@@ -1,14 +1,44 @@
-<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="220" viewBox="0 0 1200 220">
-<rect width="1200" height="220" rx="18" fill="#0f172a"/>
-<g font-family="Inter,Segoe UI,Arial" text-anchor="middle">
-<g><rect x="20" y="40" width="200" height="140" rx="16" fill="#13233f" stroke="#22d3ee" stroke-width="2"/><text x="120" y="85" font-size="34">📥</text><text x="120" y="115" font-size="16" font-weight="800" fill="#fff">1. DROP FILE</text><text x="120" y="138" font-size="13" fill="#94a3b8">Neware · BioLogic</text><text x="120" y="156" font-size="13" fill="#94a3b8">Arbin · Excel · PDF</text></g>
-<text x="238" y="120" font-size="28" fill="#334155">→</text>
-<g><rect x="256" y="40" width="200" height="140" rx="16" fill="#13233f" stroke="#a78bfa" stroke-width="2"/><text x="356" y="85" font-size="34">🧹</text><text x="356" y="115" font-size="16" font-weight="800" fill="#fff">2. AUTO-CLEAN</text><text x="356" y="138" font-size="13" fill="#94a3b8">units · mass · cycles</text><text x="356" y="156" font-size="13" fill="#94a3b8">11 QA checks</text></g>
-<text x="474" y="120" font-size="28" fill="#334155">→</text>
-<g><rect x="492" y="40" width="200" height="140" rx="16" fill="#13233f" stroke="#5eead4" stroke-width="2"/><text x="592" y="85" font-size="34">📈</text><text x="592" y="115" font-size="16" font-weight="800" fill="#fff">3. PREDICT</text><text x="592" y="138" font-size="13" fill="#94a3b8">RUL · EIS · Hansen</text><text x="592" y="156" font-size="13" fill="#94a3b8">± intervals, not hype</text></g>
-<text x="710" y="120" font-size="28" fill="#334155">→</text>
-<g><rect x="728" y="40" width="200" height="140" rx="16" fill="#13233f" stroke="#facc15" stroke-width="2"/><text x="828" y="85" font-size="34">⚖️</text><text x="828" y="115" font-size="16" font-weight="800" fill="#fff">4. OPTIMIZE</text><text x="828" y="138" font-size="13" fill="#94a3b8">Pareto + $/kg + VOC</text><text x="828" y="156" font-size="13" fill="#94a3b8">TOPSIS ranked</text></g>
-<text x="946" y="120" font-size="28" fill="#334155">→</text>
-<g><rect x="964" y="40" width="200" height="140" rx="16" fill="#22d3ee"/><text x="1064" y="85" font-size="34">📄</text><text x="1064" y="115" font-size="16" font-weight="800" fill="#0b1026">5. EXPORT</text><text x="1064" y="138" font-size="13" fill="#0b1026">CSV · RO-Crate</text><text x="1064" y="156" font-size="13" fill="#0b1026">dossier you own</text></g>
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="250" viewBox="0 0 1200 250">
+<rect width="1200" height="250" rx="16" fill="#FBFBF9" stroke="#E8E8E2"/>
+
+<g font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Helvetica, Arial, sans-serif">
+<text x="40" y="46" font-size="18" font-weight="700" fill="#111827" letter-spacing="-0.2">From a messy Friday file to a report you can defend</text>
+<text x="40" y="70" font-size="13" fill="#6B7280">five steps · no code · same flow self-hosted or in the hosted studio</text>
 </g>
+
+<line x1="178" y1="132" x2="1022" y2="132" stroke="#DCDCD4" stroke-width="2"/>
+<g font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Helvetica, Arial, sans-serif" font-size="22" fill="#C7C7BE" text-anchor="middle">
+<text x="264" y="140">›</text><text x="488" y="140">›</text><text x="712" y="140">›</text><text x="936" y="140">›</text>
+</g>
+
+<g font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, monospace" font-size="10.5" fill="#9CA3AF" text-anchor="middle">
+<text x="152" y="90">STEP 01</text><text x="376" y="90">STEP 02</text><text x="600" y="90">STEP 03</text><text x="824" y="90">STEP 04</text><text x="1048" y="90">STEP 05</text>
+</g>
+
+<g fill="#F0FDFA" stroke="#0F766E" stroke-width="1.5">
+<circle cx="152" cy="132" r="26"/><circle cx="376" cy="132" r="26"/><circle cx="600" cy="132" r="26"/><circle cx="824" cy="132" r="26"/><circle cx="1048" cy="132" r="26"/>
+</g>
+
+<g stroke="#0F766E" stroke-width="1.8" fill="none" stroke-linecap="round" stroke-linejoin="round">
+<g transform="translate(152,132)"><path d="M-7,-9 h9 l5,5 v13 h-14 Z"/><path d="M0,-2 v7"/><path d="M-3.5,2.5 L0,6.5 L3.5,2.5"/></g>
+<g transform="translate(376,132)"><path d="M-9,-8 H9 L3,0 V9 L-3,6.5 V0 Z"/></g>
+<g transform="translate(600,132)"><path d="M-8,8 v-17"/><path d="M-8,8 h17"/><path d="M-5.5,2 L-2,-3.5 L1.5,0 L7,-6.5"/></g>
+<g transform="translate(824,132)"><circle cx="0" cy="0" r="7.5"/><path d="M-11,0 h22"/><path d="M0,-11 v22"/><circle cx="0" cy="0" r="2" fill="#0F766E" stroke="none"/></g>
+<g transform="translate(1048,132)"><path d="M-8,-3 v10 h16 v-10"/><path d="M0,4 v-14"/><path d="M-4,-6 L0,-10 L4,-6"/></g>
+</g>
+
+<g font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Helvetica, Arial, sans-serif" text-anchor="middle">
+<text x="152" y="184" font-size="15" font-weight="600" fill="#1F2937">Drop file</text>
+<text x="152" y="204" font-size="12" fill="#6B7280">Neware · BioLogic · PDF</text>
+<text x="376" y="184" font-size="15" font-weight="600" fill="#1F2937">Normalize</text>
+<text x="376" y="204" font-size="12" fill="#6B7280">units · mass · cycles</text>
+<text x="600" y="184" font-size="15" font-weight="600" fill="#1F2937">Predict</text>
+<text x="600" y="204" font-size="12" fill="#6B7280">RUL · EIS · Hansen</text>
+<text x="824" y="184" font-size="15" font-weight="600" fill="#1F2937">Optimize</text>
+<text x="824" y="204" font-size="12" fill="#6B7280">Pareto · $/kg · VOC</text>
+<text x="1048" y="184" font-size="15" font-weight="600" fill="#1F2937">Export</text>
+<text x="1048" y="204" font-size="12" fill="#6B7280">CSV · RO-Crate</text>
+</g>
+
+<text x="600" y="234" font-size="11" fill="#9CA3AF" text-anchor="middle" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, monospace">files stay yours · delete anytime · every output traceable to its source row</text>
 </svg>
