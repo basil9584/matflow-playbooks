@@ -1,6 +1,6 @@
 ﻿<div align="center">
 
-![Matflow — free battery, EIS and formulation lab templates](assets/hero-banner.svg)
+![Matflow — free battery, EIS and formulation lab templates](assets/hero.svg)
 
 [![Live Demo](https://img.shields.io/badge/LIVE-matflow.celaron.com-0F766E?style=for-the-badge&logo=google-chrome&logoColor=white)](https://matflow.celaron.com)
 [![Free Templates](https://img.shields.io/badge/FREE_TEMPLATES-no_signup-334155?style=for-the-badge)](./templates)
@@ -19,7 +19,7 @@ Free survival kit for battery Excel hell, EIS spectra, and formulation spreadshe
 
 <div align="center">
 
-![From messy lab file to defensible report in five steps](assets/loop.svg)
+![From messy lab file to defensible report in five steps](assets/workflow.svg)
 
 | Drop | Normalize | Predict | Optimize | Export |
 |---|---|---|---|---|
@@ -64,7 +64,7 @@ Random points waste runs. PI says “just DOE it”.
 </tr>
 </table>
 
-![Evidence classes: measured, computed, predicted, extracted, hypothesis, demo](assets/evidence-strip.svg)
+![Evidence classes: measured, computed, predicted, extracted, hypothesis, demo](assets/evidence-classes.svg)
 
 ### Evidence first — no fake science
 Every number in Matflow carries one. Synthetic is always `DEMO`, charges $0, never presented as real. Audit log is hash-chained. Export via RO-Crate + OPTIMADE so you can leave anytime.
@@ -73,7 +73,7 @@ Every number in Matflow carries one. Synthetic is always `DEMO`, charges $0, nev
 
 ## 1. Battery cycle-life that survives review
 
-![Capacity retention with mechanism selection and conformal intervals](assets/degradation-demo.svg)
+![Capacity retention with mechanism selection and conformal intervals](assets/battery-retention.svg)
 
 **Messy in → clean out:**
 - `Neware_45C_cell3.xlsx`: `Cap(mAh)`, merged headers, rest steps counted as cycles 12, 13, 14
@@ -99,7 +99,7 @@ Live version: https://matflow.celaron.com
 
 ## 2. EIS Nyquist → Rs / Rct / Warburg without $2k software
 
-![Nyquist fit with Randles plus CPE circuit and fitted parameters](assets/eis-demo.svg)
+![Nyquist fit with Randles plus CPE circuit and fitted parameters](assets/eis-fit.svg)
 
 **Fit order that works:**
 1. High-freq intercept → **Rs** (1–5 Ω for liquid cells)
@@ -118,7 +118,7 @@ Live version: https://matflow.celaron.com
 
 ## 3. Formulations: Hansen + D-optimal on one page
 
-![Pareto frontier of performance versus cost, TOPSIS ranked](assets/pareto-demo.svg)
+![Pareto frontier of performance versus cost, TOPSIS ranked](assets/pareto-frontier.svg)
 
 **Hansen in one line:** Ra² = 4(dD₁-dD₂)² + (dP₁-dP₂)² + (dH₁-dH₂)². RED = Ra/R₀. RED < 1 = good.
 
@@ -184,15 +184,4 @@ Open an issue: `LAB-TRY: <your instrument, rows, desired output>`. No sales call
 
 ---
 
-<div align="center">
-
-### Built for fun with free LLM credits + a Contabo box.
-### I'm GenAI/LLMs, not materials — that's why ingest → review → export is boring and works.
-
-If a template saved you 30 minutes, a star is the entire marketing budget.
-
-[![Open Matflow](https://img.shields.io/badge/Open_Matflow-matflow.celaron.com-0F766E?style=for-the-badge&logo=rocket)](https://matflow.celaron.com)
-
-`battery · EIS · Hansen · DOE · Pareto · RO-Crate · OPTIMADE · PyBaMM · self-hosted`
-
-</div>
+MIT templates. Matflow is live at [matflow.celaron.com](https://matflow.celaron.com).
